@@ -1,0 +1,33 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+li, a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: black;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.site-nav li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.site-nav li a {
+    transition: all 0.3s ease 0s;
+}
