@@ -1,0 +1,6 @@
+It is the main section: 
+the header, navigation, and footer would be the same for all the pages we can copy past the code;
+there is no side bar for this location page;
+style is poor it can be developed. 
+and the google map is asking for API KEY; but we don't have it. 
+	the code for loaction is working fine. 

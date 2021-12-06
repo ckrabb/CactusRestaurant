@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+li, a, h2 {
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 100;
+    padding: 0rem; 
+    background: transparent;
+    background-color: black;
+}
+
+.logo {
+    cursor: pointer;
+    margin-left: 5rem;
+    height: 100pt;
+    margin-bottom: 3rem;
+}
+
+.site-nav li {
+    display: inline-block;
+    padding: 0px 30px;
+}
+
+.site-nav li a {
+    transition: all 0.3s ease 0s;
+}
+
+.site-nav a:hover {
+    color: orange;
+}
+
+.content p{
+    font-style: "Montserrat", sans-serif;
+    color: black;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: black;
+    padding-bottom: 4rem;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.footer-heading {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+}
+
+.footer-heading h2{
+    margin-bottom: 2rem;
+}
+
+.footer-heading p{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.fa {
+    padding: 20px;
+    font-size: 20px;
+    width: 60px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+
+  .fa-facebook {
+    background: white;
+    color: orange;
+  }
+
+  .fa:hover {
+      opacity: 0.7;
+  }
+
+  .number a:hover {
+    color: orange;
+    text-decoration: underline;
+  }
