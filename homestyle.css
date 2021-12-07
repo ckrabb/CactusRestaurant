@@ -64,13 +64,54 @@ header {
     height: 60vh;
 }
 
+.another{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	height: 80vh;
+}
+.another-pic1{
+	outline: 1px solid gray;
+	padding: 10px;
+	background-color: aliceblue;
+	background-image: url("tacos.jpg");
+	height: 40vh;
+}
 
+.another-pic2{
+	outline: 1px solid gray;
+	padding: 10px;
+	background-color: aliceblue;
+	background-image: url("burro.jpg");
+	height: 40vh;
+}
+.another-content{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	text-align: center;
+	line-height: 25px;
+	padding: 0px 35px;
+    margin-bottom: 10%; 
+    margin-top: 40%; 
+    height: 15vh;
+}
 
+.another-content p {
+    color: black;
+}
 
+.pic{
+	background-repeat: no-repeat;
+	object-fit: cover;
+	background-position: center;
+	background-size: cover;
+    margin-top: 40%;
+}
 
-
-
-
+.center{
+	margin: 0px auto;
+	width: 85vw;
+}
 
 
 
