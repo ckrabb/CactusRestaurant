@@ -1,4 +1,25 @@
+/* Media query for Phone 13 mini, iPhone 12 mini, iPhone 11 Pro, iPhone Xs, and iPhone X */
 @media only screen 
     and (device-width: 375px) 
     and (device-height: 812px) 
     and (-webkit-device-pixel-ratio: 3) { }
+
+/* Media query for iPhone 13, iPhone 12 and iPhone 12 Pro */
+@media only screen 
+    and (device-width: 390px) 
+    and (device-height: 844px) 
+    and (-webkit-device-pixel-ratio: 3) { }
+
+/* Media query for iPhone 13 Pro Max and iPhone 12 Pro Max */
+@media only screen 
+    and (device-width: 428px) 
+    and (device-height: 926px) 
+    and (-webkit-device-pixel-ratio: 3) { }
+
+/* Media query for Ipad Portrait and Landscape */
+@media only screen
+    and (min-device-width: 768px)
+    and (max-device-width: 1024px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+        
+}
