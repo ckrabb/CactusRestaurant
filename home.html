@@ -17,26 +17,65 @@
                 </ul>
             </nav>
         </header>
+        <div class="rotating-content" style=" max-height: auto;">
+            <img class="mySlides" src="homePage1.jpeg" style="width:100%">
+            <img class="mySlides" src="homePage2.jpeg" style="width:100%">
+            <img class="mySlides" src="homePage3.jpeg" style="width:100%">
+            <img class="mySlides" src="homePage4.jpeg" style="width:100%">
+            <img class="mySlides" src="homePage5.jpeg" style="width:100%">
+        <button class="button-display-left" style="height:40px;width:40px;" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="button-display-right" style="height:40px;width:40px;" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+
+<!-- JS rotating slideshow function -->
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+var i;
+var x = document.getElementsByClassName("mySlides");
+for (i = 0; i < x.length; i++) {
+x[i].style.display = "none";
+}
+myIndex++;
+if (myIndex > x.length) {myIndex = 1}
+x[myIndex-1].style.display = "block";
+setTimeout(carousel, 9000); //9 second rotation
+}
+</script>
+
+<!-- JS function for next/previous image selectors on home page-->
+<script>
+    var slideIndex = 1; showDivs(slideIndex);
+
+function plusDivs(n) { showDivs(slideIndex += n); }
+
+function showDivs(n) { 
+    var i; var x = document.getElementsByClassName("mySlides"); 
+    if (n > x.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = x.length} 
+    for (i = 0; i < x.length; i++) { 
+        x[i].style.display = "none"; } 
+        x[slideIndex-1].style.display = "block"; } 
+        </script>
 
 
         <main class="main">
-            <section class="another center">
-                <div class="another-pic1 pic">
-                </div>
+            <section class="center1">
+                <div class="another-pic1 pic"></div>
                 <div class="another-content">
               <h1 class="center">Taco Dinner (Steak)</h1><br>
               <p class="">3 corn tortilla tacos filled with steak, onions, and cilantro, with a side of rice and beans.</p>
                 </div>
             </section>
 
-            <section class="another center">
-		
+            <section class="center2">
                 <div class="another-content">
               <h1 class="center">Sr. Burro (Pork Meat)</h1><br>
-              <p class="">8 inch burrito filled with cubed porked covered in a spicy brown sauce, rice, beans, and sour cream.</p>
+              <p class="">8 inch burrito filled with cubed pork covered in a spicy brown sauce, rice, beans, and sour cream.</p>
                 </div>
                 <div class="another-pic2 pic">
-                
                 </div>
             </section>
         </main>
@@ -45,13 +84,11 @@
         <footer class="footer">
             <div class="footer-heading footer-1">
                 <h2>Media</h2>
-                <p>Facebook:</p>
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
                 <a href="https://www.facebook.com/CactusMexicanRestaurantCantina" class="fa fa-facebook"></a>
             </div>
             <div class="footer-heading footer-2">
                 <h2>Location</h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.819857024655!2d-90.5739412846516!3d41.44313030050067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87e232830760464b%3A0x89bdfe25366e05a5!2sCactus!5e0!3m2!1sen!2sus!4v1638507304161!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 <p>315 10th Ave W, Milan, IL 61264</p>
             </div>
             <div class="footer-heading footer-3">
