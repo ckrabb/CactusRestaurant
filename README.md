@@ -49,3 +49,25 @@ function showDivs(n) {
   x[slideIndex-1].style.display = "block";
 }
 </script>
+
+/* CSS for slideshow button left */
+.button-display-left {
+  color: #fff!important;
+  background-color: #000000!important;
+  position: sticky;
+  top: 35%;
+  left: 0%;
+  right: 100%;
+  transform: translate(0%, -700%);
+}
+
+/* CSS for slideshow button right */
+.button-display-right {
+  color: #fff!important;
+  background-color: #000000!important;
+  position: sticky;
+  top: 35%;
+  left: 100%;
+  right: 0%;
+  transform: translate(0%,-700%);
+  }
